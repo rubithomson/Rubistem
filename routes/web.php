@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+
+Route::get('/','HomeController@welcome');//Nuevo para autenticar antes de acceder
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => 'auth'],function(){ //Grupo de rutas disponibles una vez autenticado el usuario.
+
+Route::get('/','HomeController@index')->name('/');//Ruta principal del sistema una vez logueado.
+//Aqui va el resto de las rutas.
+
 });
