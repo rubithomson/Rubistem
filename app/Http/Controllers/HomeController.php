@@ -25,7 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home'); //Ruta principal del sistema
+        return view('allowed.home.home'); //Ruta principal del sistema
+    }
+    public function sample()
+    {
+        return view('allowed.sample'); //Ruta principal del sistema
     }
 
     public function welcome(){//Nuevo
