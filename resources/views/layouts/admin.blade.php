@@ -30,9 +30,10 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
    <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
+    
+        #weatherWidget .currentDesc {
+            color: #ffffff!important;
+        }
         .traffic-chart {
             min-height: 335px;
         }
